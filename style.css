@@ -1,0 +1,126 @@
+
+:root{
+  --main-font: 'League Spartan', sans-serif;
+  --serif-font: 'Playfair Display', serif;
+}
+
+body{
+  font-family: var(--main-font);
+  padding: 0 1rem;
+  margin: 0;
+}
+
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+
+/* global classes */
+.container{
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.serif-pars{
+  font-family: var(--serif-font);
+}
+
+.box{
+  border-radius: 10px;
+}
+
+
+/* header */
+header{
+  /* position: sticky;
+  top: 0; */
+  background-color: #f2f2f2;
+}
+
+header nav{
+  display: flex;
+  justify-content: space-between;
+}
+
+header nav ul{
+  display: flex;
+  justify-content: space-between;
+  width: 180px;
+}
+
+header nav ul li{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* hero: introduce yourself */
+.hero{
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero h3{
+  font-weight: 200;
+  margin: 0;
+}
+
+.hero p{
+  font-size: xx-large;
+  font-weight: 400;
+}
+
+/* my projects */
+.projects{
+  background-color: #f2f2f2;
+}
+
+.projects > section {
+  display: flex;
+  padding: 4rem 0;
+}
+
+.projects img{
+  max-width: 640px;
+  border-radius: 30px;
+}
+
+.projects .details{
+  max-width: 400px;
+  padding: 2rem;
+}
+
+.projects .details h3{
+  font-size: x-large;
+}
+
+.projects .details p{
+  font-size: large;
+}
+
+
+/* about me */
+.about-me{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+
+.about-me img{
+  width: 100%;
+}
+
+.about-me section{
+  width: 45%;
+}
