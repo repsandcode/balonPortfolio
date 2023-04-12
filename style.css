@@ -18,6 +18,7 @@ body{
 
 ul{
   list-style: none;
+  padding: 0;
 }
 
 a{
@@ -129,4 +130,25 @@ header nav ul li{
 
 .about-me section{
   width: 45%;
+}
+
+
+/* Work Together */
+.contact ul {
+  padding: 2rem 0;
+}
+
+.contact li{
+  margin-bottom: 4rem;
+}
+
+.contact li h3{
+  font-weight: 200;
+  padding-bottom: 1rem;
+  margin: 0;
+}
+
+.contact li a{
+  font-weight: 300;
+  font-size: x-large;
 }
