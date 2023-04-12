@@ -2,12 +2,18 @@
 :root{
   --main-font: 'League Spartan', sans-serif;
   --serif-font: 'Playfair Display', serif;
+  --dark: #344D67;
+  --blue-green: #6ECCAF;
+  --light-green: #ADE792;
+  --light: #f3ecb098;
 }
 
 body{
   font-family: var(--main-font);
   padding: 0 1rem;
   margin: 0;
+  background: var(--light);
+  color: var(--dark);
 }
 
 ul{
@@ -21,6 +27,7 @@ a{
 
 a:hover{
   text-decoration: underline;
+  color: var(--blue-green);
 }
 
 
@@ -43,7 +50,6 @@ a:hover{
 header{
   /* position: sticky;
   top: 0; */
-  background-color: #f2f2f2;
 }
 
 header nav{
@@ -83,7 +89,7 @@ header nav ul li{
 
 /* my projects */
 .projects{
-  background-color: #f2f2f2;
+  
 }
 
 .projects > section {
@@ -93,7 +99,7 @@ header nav ul li{
 
 .projects img{
   max-width: 640px;
-  border-radius: 30px;
+  border-radius: 24px;
 }
 
 .projects .details{
