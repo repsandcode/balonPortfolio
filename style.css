@@ -11,9 +11,16 @@
 body{
   font-family: var(--main-font);
   padding: 0 1rem;
-  margin: 0;
   background: var(--light);
   color: var(--dark);
+}
+
+body,
+h1,
+h3,
+p,
+ul{
+  margin: 0;
 }
 
 ul{
@@ -33,15 +40,17 @@ a:hover{
 
 h1{
   font-size: 2rem;
-  font-weight: 800;
+  font-weight: 500;
 }
 
-
 header,
-.projects,
-.contact,
 footer{
-  padding-top: 1.2rem;
+  padding: 2rem 0;
+}
+
+.projects,
+.contact{
+  padding: 2.5rem 0;
 }
 
 
@@ -78,10 +87,15 @@ header nav ul{
   width: 180px;
 }
 
-header nav ul li{
+header nav li{
   display: flex;
   align-items: center;
   cursor: pointer;
+}
+
+header nav a{
+  font-size: 1.4rem;
+  font-weight: 200;
 }
 
 
@@ -94,14 +108,15 @@ header nav ul li{
 }
 
 .hero h3{
-  font-size: large;
+  font-size: 1.4rem;
   font-weight: 200;
   margin: 0;
 }
 
 .hero p{
-  font-size: xx-large;
+  font-size: 2rem;
   font-weight: 400;
+  padding-top: 1rem;
 }
 
 
@@ -112,12 +127,20 @@ header nav ul li{
 }
 
 .projects h1{
-  
+  padding-bottom: 4rem;
 }
 
 .projects > section {
   display: flex;
   padding: 4rem 0;
+}
+
+.projects > section:first-of-type {
+  padding-top: 0;
+}
+
+.projects > section:last-child {
+  padding-bottom: 0;
 }
 
 .projects img{
@@ -131,13 +154,21 @@ header nav ul li{
 }
 
 .projects .details h3{
-  font-size: x-large;
+  font-size: 1.4rem;
+  font-weight: 400;
 }
 
 .projects .details p{
-  font-size: large;
+  font-size: 1.8rem;
+  font-weight: 400;
+  padding: 2.4rem 0;
 }
 
+.projects .details a{
+  font-size: 1.1rem;
+  font-weight: 400;
+  padding-right: 1rem;
+}
 
 /* about me */
 .about-me{
@@ -161,12 +192,9 @@ header nav ul li{
 }
 
 .contact p{
-  font-size: x-large;
-  font-weight: 200;
-}
-
-.contact ul {
-  padding: 2rem 0;
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding: 4rem 0;
 }
 
 .contact li{
@@ -184,12 +212,17 @@ header nav ul li{
 }
 
 .contact li a{
-  font-weight: 300;
-  font-size: x-large;
+  font-size: 1.5rem;
+  font-weight: 400;
 }
 
 
 /* footer */
 footer{
   border-top: 1px solid var(--dark);
+}
+
+footer nav,
+footer ul{
+  display: flex;
 }
