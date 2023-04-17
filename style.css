@@ -8,11 +8,15 @@
   --light: #f3ecb096;
 }
 
-body{
+html{
   font-family: var(--main-font);
-  padding: 0 1rem;
   background: var(--light);
   color: var(--dark);
+  font-size: 62.5%;
+}
+
+body{
+  padding: 0 2.5rem;
 }
 
 body,
@@ -39,18 +43,13 @@ a:hover{
 }
 
 h1{
-  font-size: 2rem;
+  font-size: 2.8rem;
   font-weight: 500;
-}
-
-header,
-footer{
-  padding: 2rem 0;
 }
 
 .projects,
 .contact{
-  padding: 2.5rem 0;
+  padding: 4rem 0;
 }
 
 
@@ -71,9 +70,7 @@ footer{
 
 /* header */
 header{
-  /* position: sticky;
-  top: 0;
-  border-bottom: 1px solid var(--dark); */
+  padding: 2.5rem 0;
 }
 
 header nav{
@@ -94,45 +91,45 @@ header nav li{
 }
 
 header nav a{
-  font-size: 1.4rem;
+  font-size: 2rem;
   font-weight: 200;
 }
 
 
 /* hero: introduce yourself */
 .hero{
-  height: 78vh;
+  min-height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 .hero h3{
-  font-size: 1.4rem;
+  font-size: 2rem;
   font-weight: 200;
   margin: 0;
 }
 
 .hero p{
-  font-size: 2rem;
+  font-size: 2.8rem;
   font-weight: 400;
-  padding-top: 1rem;
+  padding-top: 2rem;
 }
 
 
 /* my projects */
 .projects{
-  margin-top: 4rem;
+  margin-top: 7rem;
   border-top: 1px solid var(--dark);
 }
 
 .projects h1{
-  padding-bottom: 4rem;
+  padding-bottom: 8rem;
 }
 
 .projects > section {
   display: flex;
-  padding: 4rem 0;
+  padding: 5rem 0;
 }
 
 .projects > section:first-of-type {
@@ -150,24 +147,24 @@ header nav a{
 
 .projects .details{
   max-width: 400px;
-  padding: 2rem;
+  padding: 4rem;
 }
 
 .projects .details h3{
-  font-size: 1.4rem;
+  font-size: 2rem;
   font-weight: 400;
 }
 
 .projects .details p{
-  font-size: 1.8rem;
+  font-size: 2.8rem;
   font-weight: 400;
-  padding: 2.4rem 0;
+  padding: 5rem 0;
 }
 
 .projects .details a{
-  font-size: 1.1rem;
+  font-size: 2rem;
   font-weight: 400;
-  padding-right: 1rem;
+  padding-right: 2rem;
 }
 
 /* about me */
@@ -192,7 +189,7 @@ header nav a{
 }
 
 .contact p{
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   font-weight: 400;
   padding: 4rem 0;
 }
@@ -207,22 +204,46 @@ header nav a{
 
 .contact li h3{
   font-weight: 200;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
   margin: 0;
+  font-size: 2rem;
 }
 
 .contact li a{
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   font-weight: 400;
 }
 
 
 /* footer */
 footer{
+  padding: 8rem 0;
   border-top: 1px solid var(--dark);
 }
 
-footer nav,
 footer ul{
   display: flex;
+  justify-content: center;
+}
+
+footer li{
+  margin: 0 3rem 0 0;
+  display: flex;
+  align-items: center;
+}
+
+
+footer li:first-child a{
+  width: auto;
+  padding: 1rem 3rem;
+  border: 1px solid var(--dark);
+  border-radius: 24px;
+}
+
+footer li:first-child i{
+  margin-right: .5rem;
+}
+
+footer a{
+  font-size: 2rem;
 }
