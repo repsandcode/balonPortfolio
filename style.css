@@ -17,6 +17,7 @@ html{
 
 body{
   padding: 0 2.5rem;
+  line-height: 1.3;
 }
 
 body,
@@ -47,6 +48,7 @@ h1{
   font-weight: 500;
 }
 
+.about-me,
 .projects,
 .contact{
   padding: 4rem 0;
@@ -117,9 +119,49 @@ header nav a{
 }
 
 
+/* about me */
+.about-me{
+  border-top: 1px solid var(--dark);
+  margin-top: 7rem;
+}
+
+.about-me h1{
+  padding-bottom: 4rem;
+}
+
+.about-me > section{
+  display: flex;
+  justify-content: center;
+}
+
+.about-me .image{
+  display: flex;
+  align-items: center;
+}
+
+.about-me img{
+  max-width: 400px;
+  border-radius: 24px;
+}
+
+.about-me .description{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 2rem;
+}
+
+.about-me .description p{
+ font-size: 2rem;
+}
+
+.about-me .description p+p{
+ padding-top: 2rem;
+}
+
+
 /* my projects */
 .projects{
-  margin-top: 7rem;
   border-top: 1px solid var(--dark);
 }
 
@@ -165,21 +207,6 @@ header nav a{
   font-size: 2rem;
   font-weight: 400;
   padding-right: 2rem;
-}
-
-/* about me */
-.about-me{
-  display: flex;
-  justify-content: space-between;
-  padding-top: 1rem;
-}
-
-.about-me img{
-  width: 100%;
-}
-
-.about-me section{
-  width: 45%;
 }
 
 
