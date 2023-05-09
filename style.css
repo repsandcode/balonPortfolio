@@ -2,10 +2,9 @@
 :root{
   --main-font: 'League Spartan', sans-serif;
   --serif-font: 'Playfair Display', serif;
-  --dark: #344D67;
-  --blue-green: #6ECCAF;
-  --light-green: #ADE792;
-  --light: #f3ecb096;
+  --dark: #000F08;
+  --light: #F2F3D9;
+  --green: #6A994E;
 }
 
 html{
@@ -40,7 +39,7 @@ a{
 
 a:hover{
   text-decoration: underline;
-  color: var(--blue-green);
+  color: var(--green);
 }
 
 h1{
@@ -51,7 +50,7 @@ h1{
 .about-me,
 .projects,
 .contact{
-  padding: 4rem 0;
+  padding: 15rem 0;
 }
 
 
@@ -95,6 +94,10 @@ header nav li{
 header nav a{
   font-size: 2rem;
   font-weight: 200;
+}
+
+header nav a:hover{
+  text-decoration: none;
 }
 
 
@@ -148,7 +151,7 @@ header nav a{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 2rem;
+  padding: 4rem;
 }
 
 .about-me .description p{
@@ -263,12 +266,13 @@ footer li{
 footer li:first-child a{
   width: auto;
   padding: 1rem 3rem;
-  border: 1px solid var(--dark);
+  border: 2px solid var(--dark);
   border-radius: 24px;
+  text-decoration: none;
 }
 
-footer li:first-child i{
-  margin-right: .5rem;
+footer li:first-child a:hover{
+  border-color: var(--green);
 }
 
 footer a{
