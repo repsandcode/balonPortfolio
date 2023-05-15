@@ -146,24 +146,27 @@ header nav a:hover{
   margin-bottom: 20rem;
 }
 
-.about-me h1{
-  margin-bottom: 3rem;
+.about-me > h1{
+  margin-bottom: 5rem;
+}
+
+.headline > h1{
+  margin-bottom: 1rem;
 }
 
 .about .headline{
   width: 100%;
+  margin-bottom: 10rem;
 }
 
 .about .resume{
   background-color: var(--dark);
   color: var(--light);
   font-size: 2rem;
-  padding: 1rem 2rem;
+  padding: 1rem 2.8rem;
   text-align: center;
-  margin-bottom: 10rem;
   border-radius: 5rem;
   text-decoration: none;
-  width: 100px;
   transition: .88s ease-out;
 }
 
@@ -173,27 +176,28 @@ header nav a:hover{
   transition: .44s ease-in;
 }
 
-.about-me .description{
+.about .description{
   width: 100%;
 }
 
-.about-me .description p{
+.about .description p{
  font-size: 2.4rem;
 }
 
-.about-me .description p+p{
+.about .description p+p{
  padding-top: 2.4rem;
 }
 
 .about-me .image{
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  row-gap: 2rem;
 }
 
 .about-me .image li{
   border-radius: 24px;
   object-fit: cover;
-  margin-bottom: 2rem;
 }
 
 .about-me .palawan{
@@ -244,7 +248,7 @@ header nav a:hover{
 }
 
 .projects .details{
-  max-width: 100%;
+  width: 100%;
   padding: 2rem;
 }
 
@@ -277,17 +281,16 @@ header nav a:hover{
   padding: 4rem 0;
 }
 
-.contact li{
-  margin-bottom: 4rem;
-}
-
-.contact li:last-child{
-  margin-bottom: 0;
+.contact ul{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  row-gap: 5rem;
 }
 
 .contact li h3{
   font-weight: 200;
-  padding-bottom: 2rem;
+  padding-bottom: 1.2rem;
   margin: 0;
   font-size: 2rem;
 }
@@ -321,7 +324,59 @@ footer li{
 
 
 
+
+
 /* media queries */
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 650px) {
+  .about-me .about{
+    flex-direction: row;
+  }
   
+  .about .headline{
+    width: 40%;
+    margin-bottom: 0rem;
+  }
+  
+  .about .description{
+    width: 60%;
+    padding-left: 5rem;
+  }
+
+  .about-me .image{
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2rem;
+    column-gap: 2rem;
+  }
+
+  .contact ul{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    column-gap: 5rem;
+    row-gap: 5rem;
+  }
+
+  .contact li a{
+    font-size: 2.5rem;
+  }
+}
+
+
+
+@media screen and (min-width: 900px) {
+  .about-me .image{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+  .projects > section {
+    flex-direction: row;
+  }
+
+  .projects .project-img{
+    width: 60%;
+  }
+
+  .projects .details{
+    width: 40%;
+    padding: 2rem 4rem 4rem 4rem;
+  }
 }
