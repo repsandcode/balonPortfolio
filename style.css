@@ -322,6 +322,15 @@ footer li{
   align-items: center;
 }
 
+footer > div{
+  margin-top: 1.4rem;
+  text-align: center;
+}
+
+footer > div span{
+  font-size: 1.4rem;
+}
+
 
 
 
