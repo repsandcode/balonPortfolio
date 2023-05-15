@@ -12,6 +12,7 @@
   line-height: 1.6;
 }
 
+body,
 html{
   font-family: var(--main-font);
   background: var(--light);
@@ -113,6 +114,7 @@ header nav a:hover{
 }
 
 
+
 /* hero: introduce yourself */
 .hero{
   min-height: 80vh;
@@ -131,32 +133,52 @@ header nav a:hover{
 }
 
 
+
 /* about me */
 .about-me{
   border-top: 1px solid var(--dark);
   margin-top: 7rem;
 }
 
-.about-me h1{
-  padding-bottom: 4rem;
-}
-
 .about-me .about{
   display: flex;
+  flex-direction: column;
   margin-bottom: 20rem;
 }
 
-.about-me .headline{
-  width: 40%;
+.about-me h1{
+  margin-bottom: 3rem;
+}
+
+.about .headline{
+  width: 100%;
+}
+
+.about .resume{
+  background-color: var(--dark);
+  color: var(--light);
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  text-align: center;
+  margin-bottom: 10rem;
+  border-radius: 5rem;
+  text-decoration: none;
+  width: 100px;
+  transition: .88s ease-out;
+}
+
+.about .resume:hover{
+  background-color: var(--green);
+  color: var(--dark);
+  transition: .44s ease-in;
 }
 
 .about-me .description{
-  width: 60%;
+  width: 100%;
 }
 
 .about-me .description p{
  font-size: 2.4rem;
- padding-left: 5rem;
 }
 
 .about-me .description p+p{
@@ -165,19 +187,13 @@ header nav a:hover{
 
 .about-me .image{
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
 }
 
 .about-me .image li{
-  width: 33%;
-  height: 100%;
   border-radius: 24px;
-}
-
-.about-me img{
-  width: 100%;
-  border-radius: 24px;
+  object-fit: cover;
+  margin-bottom: 2rem;
 }
 
 .about-me .palawan{
@@ -197,6 +213,8 @@ header nav a:hover{
 }
 
 
+
+
 /* my projects */
 .projects{
   border-top: 1px solid var(--dark);
@@ -208,6 +226,7 @@ header nav a:hover{
 
 .projects > section {
   display: flex;
+  flex-direction: column;
   padding: 10rem 0;
 }
 
@@ -220,13 +239,13 @@ header nav a:hover{
 }
 
 .projects img{
-  max-width: 640px;
+  width: 100%;
   border-radius: 24px;
 }
 
 .projects .details{
-  max-width: 400px;
-  padding: 4rem;
+  max-width: 100%;
+  padding: 2rem;
 }
 
 .projects .details h3{
@@ -244,6 +263,8 @@ header nav a:hover{
   font-weight: 400;
   padding-right: 2rem;
 }
+
+
 
 
 /* Work Together */
@@ -272,7 +293,7 @@ header nav a:hover{
 }
 
 .contact li a{
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 400;
 }
 
@@ -283,30 +304,24 @@ footer{
   border-top: 1px solid var(--dark);
 }
 
+footer a{
+  font-size: 2rem;
+}
+
 footer ul{
   display: flex;
   justify-content: center;
+  gap: 3rem;
 }
 
 footer li{
-  margin: 0 3rem 0 0;
   display: flex;
   align-items: center;
 }
 
 
-footer li:first-child a{
-  width: auto;
-  padding: 1rem 3rem;
-  border: 2px solid var(--dark);
-  border-radius: 24px;
-  text-decoration: none;
-}
 
-footer li:first-child a:hover{
-  border-color: var(--green);
-}
-
-footer a{
-  font-size: 2rem;
+/* media queries */
+@media screen and (min-width: 780px) {
+  
 }
