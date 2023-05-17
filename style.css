@@ -150,16 +150,16 @@ header nav a:hover{
   margin-bottom: 5rem;
 }
 
-.headline > h1{
-  margin-bottom: 1rem;
-}
-
-.about .headline{
+.about .sidebar{
   width: 100%;
   margin-bottom: 10rem;
 }
 
-.about .resume{
+.sidebar .headline{
+  margin-bottom: 2rem;
+}
+
+.sidebar .resume{
   background-color: var(--dark);
   color: var(--light);
   font-size: 2rem;
@@ -341,7 +341,7 @@ footer > div span{
     flex-direction: row;
   }
   
-  .about .headline{
+  .about .sidebar{
     width: 40%;
     margin-bottom: 0rem;
   }
