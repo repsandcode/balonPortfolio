@@ -98,13 +98,13 @@ header nav {
 header nav ul {
   display: flex;
   justify-content: space-between;
-  width: 180px;
 }
 
 header nav li {
   display: flex;
   align-items: center;
   cursor: pointer;
+  margin-left: 4rem;
 }
 
 header nav a {
@@ -118,10 +118,11 @@ header nav a:hover {
 
 /* hero: introduce yourself */
 .hero {
-  min-height: 80vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-bottom: 4rem;
 }
 
 .hero .green {
@@ -134,11 +135,6 @@ header nav a:hover {
 }
 
 /* about me */
-.about-me {
-  border-top: 1px solid var(--dark);
-  margin-top: 7rem;
-}
-
 .about-me .about {
   display: flex;
   flex-direction: column;
