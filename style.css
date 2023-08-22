@@ -3,7 +3,7 @@
   --serif-font: "Playfair Display", serif;
   --dark: #0c142c;
   --light: #f5f5f5;
-  --green: #82b418;
+  --green: #88bc1a;
   --gray: #585d6b;
 }
 
@@ -158,13 +158,13 @@ header nav a:hover {
   text-align: center;
   border-radius: 5rem;
   text-decoration: none;
-  transition: 0.88s ease-out;
+  transition: 0.66s ease-out;
 }
 
 .about .resume:hover {
   background-color: var(--green);
   color: var(--dark);
-  transition: 0.44s ease-in;
+  transition: 0.33s ease-in;
 }
 
 .about .description {
