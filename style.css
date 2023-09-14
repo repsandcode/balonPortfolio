@@ -192,17 +192,17 @@ header nav a:hover {
 }
 
 .about-me .palawan {
-  background-image: url("https://i.ibb.co/wSmFsnj/profile.jpg");
+  background-image: url("img/profile.jpg");
   background-size: cover;
   background-position: center;
 }
 .about-me .la-union {
-  background-image: url("https://i.ibb.co/GJy71xf/profile01.jpg");
+  background-image: url("img/profile01.jpg");
   background-size: cover;
   background-position: center;
 }
 .about-me .laguna {
-  background-image: url("https://i.ibb.co/12Ft9Ky/profile02.jpg");
+  background-image: url("img/profile02.jpeg");
   background-size: cover;
   background-position: center;
 }
