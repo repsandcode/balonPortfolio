@@ -95,6 +95,10 @@ header nav {
   justify-content: space-between;
 }
 
+.initials:is(:focus, :hover) {
+  color: var(--green);
+}
+
 header nav ul {
   display: flex;
   justify-content: space-between;
