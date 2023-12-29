@@ -97,6 +97,7 @@ header nav {
 
 .initials:is(:focus, :hover) {
   color: var(--green);
+  cursor: pointer;
 }
 
 header nav ul {
