@@ -158,13 +158,13 @@ header nav a:hover {
   text-align: center;
   border-radius: 5rem;
   text-decoration: none;
-  transition: 0.66s ease-out;
+  transition: 0.22s ease-out;
 }
 
 .about .resume:hover {
   background-color: var(--green);
   color: var(--dark);
-  transition: 0.33s ease-in;
+  transition: 0.22s ease-in;
 }
 
 .about .description {
